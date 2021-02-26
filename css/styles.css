@@ -1,0 +1,207 @@
+:root{
+    --principal:#f9f7f7;
+    --secundario:#dbe2ef;
+    --azul:#3f72af;
+    --blanco:#112d4e;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    
+}
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    text-transform: uppercase;
+}
+h2{
+    margin:1rem;
+    border-bottom: 5px solid var(--blanco);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* NAV */
+header{
+    background: rebeccapurple;
+    /* position: absolute; */
+    width: 100%;
+    background: transparent;
+}
+.navbar{
+    background: var(--principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+.navbar a{
+    display: inline-block;
+    margin: 0 2rem;
+    color: black;
+    text-decoration: none;
+}
+/* Hero */
+.Hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.Hero img{
+    width: 100%;
+    height: 100vh;
+    /* object-fit: contain; */
+}
+.mascara{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mascara div{
+    color: white;
+    font-size: 3rem;
+}
+/* Main */
+/* NEGOCIO */
+.objetivos-negocio{
+    display: flex;
+    gap: 3rem;
+}
+.Card{
+    padding: 3rem 1rem;
+    width: 50rem;
+    background: var(--secundario);
+    text-align: center;
+    line-height: 3rem;
+}
+.Card i{
+    font-size: 5rem;
+    background: var(--azul);
+    padding: 2rem;
+    border-radius: 50%;
+    color: var(--principal);
+}
+/* OBJETIVOS */
+.seccion{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.seccion img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.seccion li{
+    list-style: none;
+    margin: 1rem;
+    font-size: 1.7rem;
+}
+.seccion1::after{
+    content: "";
+    width: 1rem;
+    height: 15rem;
+    background: var(--blanco);
+}
+
+.seccion2::before{
+    content: "";
+    width: 1rem;
+    height: 15rem;
+    background: var(--blanco);
+}
+/* Parallax */
+.parallax{
+    margin-top: 5rem;
+    width: 100%;
+    height: 50rem;
+    background-image: url("/images/IMG-20200210-WA0006.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mision{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 5rem;
+    background: var(--blanco);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:3rem 0;
+    color: white;
+}
+footer h3{
+    margin: 1rem 0;
+}
+footer i{
+    font-size: 3rem;
+    margin: 0 2rem ;
+}
+
+/* UBICACION */
+#mapid { height: 400px; }
+
+.lista{
+    display: flex;
+    gap: 3rem;
+}
+.miembro{
+    padding:1rem 3rem;
+    width: 50rem;
+    background: var(--secundario);
+    text-align: center;
+}
+.miembro img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.miembro span{
+    display: block;
+    margin: 1rem;
+}
+.miembro i{
+    background: var(--blanco);
+    font-size: 5rem;
+    padding: 2rem;
+    border-radius: 50%;
+    color: var(--secundario);
+}
